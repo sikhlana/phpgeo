@@ -22,6 +22,16 @@ class Polygon implements GeometryInterface
     protected $points = [];
 
     /**
+     * Polygon constructor.
+     *
+     * @param Coordinate[] $points
+     */
+    public function __construct(array $points = [])
+    {
+        $this->points = $points;
+    }
+
+    /**
      * @param Coordinate $point
      *
      * @return void

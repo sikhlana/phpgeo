@@ -21,6 +21,16 @@ class Polyline implements GeometryInterface
     protected $points = [];
 
     /**
+     * Polyline constructor.
+     *
+     * @param Coordinate[] $points
+     */
+    public function __construct(array $points = [])
+    {
+        $this->points = $points;
+    }
+
+    /**
      * @param Coordinate $point
      *
      * @return void
